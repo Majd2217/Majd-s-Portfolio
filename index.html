@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majd Haddad | CS Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+    
+    <!-- Floating Navigation -->
+    <div class="floating-nav">
+        <div class="nav-indicator"></div>
+        <ul>
+            <li data-section="hero"><a href="#hero"><i class="fas fa-home"></i><span>Home</span></a></li>
+            <li data-section="about"><a href="#about"><i class="fas fa-user"></i><span>About</span></a></li>
+            <li data-section="education"><a href="#education"><i class="fas fa-graduation-cap"></i><span>Education</span></a></li>
+            <li data-section="experience"><a href="#experience"><i class="fas fa-briefcase"></i><span>Experience</span></a></li>
+            <li data-section="projects"><a href="#projects"><i class="fas fa-code-branch"></i><span>Projects</span></a></li>
+            <li data-section="activities"><a href="#activities"><i class="fas fa-users"></i><span>Activities</span></a></li>
+            <li data-section="skills"><a href="#skills"><i class="fas fa-laptop-code"></i><span>Skills</span></a></li>
+            <li data-section="contact"><a href="#contact"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">&lt;MajdHaddad /&gt;</div>
+        <nav>
+          
+        </nav>
+        <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="glitch-wrapper">
+                    <h1 class="glitch" data-text="Majd Haddad">Majd Haddad</h1>
+                </div>
+                <div class="typing-container">
+                    <span id="typed-text"></span><span class="cursor">|</span>
+                </div>
+                <p>Penn State University student passionate about software development, machine learning, and creating innovative solutions.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="primary-btn"><span>View Projects</span></a>
+                    <a href="#contact" class="secondary-btn"><span>Contact Me</span></a>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div>
+                        <span class="scroll-text">Scroll Down</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-code">
+                <pre><code>
+class <span class="code-highlight">MajdHaddad</span> {
+    constructor() {
+        this.name = "Majd Haddad";
+        this.role = "Computer Science Student";
+        this.location = "Penn State University";
+        this.languages = ["C++", "Java", "Python", "JavaScript"];
+        this.interests = ["Software Development", 
+                        "Machine Learning", 
+                        "Web Development"];
+    }
+
+    sayHello() {
+        console.log("Welcome to my portfolio!");
+    }
+}
+
+const majd = new <span class="code-highlight">MajdHaddad</span>();
+majd.sayHello();
+                </code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title" data-aos="fade-up"><span class="highlight">&lt;</span> About Me <span class="highlight">/&gt;</span></h2>
+        <div class="about-content">
+            <div class="about-text" data-aos="fade-right">
+                <h3>Who I Am</h3>
+                <p>
+                    I'm a Computer Science student at Penn State University with a passion for software development, machine learning, and creating innovative solutions. I'm proficient in multiple programming languages and frameworks, with experience in both frontend and backend development.
+                </p>
+                <p>
+                I'm constantly seeking opportunities to apply my technical skills to real-world problems and expand my knowledge in the field of computer science.
+                </p>
+            </div>
+            <div class="about-stats" data-aos="fade-left">
+                <h3>Quick Facts</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>Location</h4>
+                            <p>State College, Pennsylvania</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>Languages</h4>
+                            <p>English (Expert), Arabic (Expert)</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>Interests</h4>
+                            <p>Software Development, Machine Learning, Soccer</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>Education</h4>
+                            <p>B.S. Computer Science, Penn State</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2 class="section-title" data-aos="fade-up"><span class="highlight">&lt;</span> Education <span class="highlight">/&gt;</span></h2>
+        <div class="timeline" data-aos="fade-up">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022 - 2026</div>
+                <div class="timeline-content">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>The Pennsylvania State University</h3>
+                    <h4>Bachelor of Science in Computer Science</h4>
+                    <p class="timeline-date-mobile">Expected Graduation: May 2026</p>
+                    <div class="timeline-details">
+                        <p><strong>Related Coursework:</strong></p>
+                        <div class="course-tags">
+                            <span>Data Structures & Algorithms</span>
+                            <span>Objects & Design</span>
+                            <span>Computer Organization & Programming</span>
+                            <span>Machine Learning</span>
+                            <span>Artificial Intelligence</span>
+                            <span>Object-Oriented Programming</span>
+                            <span>Statistics & Applications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <h2 class="section-title" data-aos="fade-up"><span class="highlight">&lt;</span> Experience <span class="highlight">/&gt;</span></h2>
+        <div class="timeline" data-aos="fade-up">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">May 2024 - Aug 2024</div>
+                <div class="timeline-content">
+                    <div class="timeline-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Commonwealth of Pennsylvania - PennDot</h3>
+                    <h4>Summer Intern</h4>
+                    <p class="timeline-location">Allentown, Pennsylvania</p>
+                    <div class="timeline-details">
+                        <ul>
+                            <li>Created scripts to automate data processing and generate reports, significantly reducing manual workload.</li>
+                            <li>Applied classroom knowledge of data structures, algorithms, and database management to streamline data collection and processing tasks.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title" data-aos="fade-up"><span class="highlight">&lt;</span> Projects <span class="highlight">/&gt;</span></h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-content">
+                    <div class="project-header">
+                        <div class="folder-icon">
+                            <i class="fas fa-folder"></i>
+                        </div>
+                        <h3>LionLink</h3>
+                    </div>
+                    <p>A full-stack website that connects over 500 users for event discovery and peer networking at Penn State.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Web Scraping</span>
+                    </div>
+                    <div class="project-highlights">
+                        <ul>
+                            <li>Developed full-stack website with MongoDB and Node.js backend, React frontend</li>
+                            <li>Implemented secure email verification</li>
+                            <li>Designed scalable database improving performance by 35%</li>
+                            <li>Automated event data collection, reducing manual input by 80%</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-hover">
+                    <div class="project-hover-content">
+                        <h3>LionLink</h3>
+                        <p>A comprehensive platform for Penn State students to discover events and connect with peers.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Users</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">35%</span>
+                                <span class="stat-label">Performance Boost</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">80%</span>
+                                <span class="stat-label">Automation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-content">
+                    <div class="project-header">
+                        <div class="folder-icon">
+                            <i class="fas fa-folder"></i>
+                        </div>
+                        <h3>AI Resume Analyzer</h3>
+                    </div>
+                    <p>A machine learning-powered resume analysis system that processes resumes and provides optimization feedback.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Django</span>
+                        <span class="tech-badge">scikit-learn</span>
+                        <span class="tech-badge">NLP</span>
+                        <span class="tech-badge">HTML/CSS/JS</span>
+                    </div>
+                    <div class="project-highlights">
+                        <ul>
+                            <li>Architected ML-powered resume analysis system processing 100+ resumes</li>
+                            <li>Engineered NLP algorithms with 85% accuracy in keyword extraction</li>
+                            <li>Implemented real-time feedback system reducing optimization time by 60%</li>
+                            <li>Built responsive dashboard with 92% positive user feedback</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-hover">
+                    <div class="project-hover-content">
+                        <h3>AI Resume Analyzer</h3>
+                        <p>An intelligent system that analyzes resumes and provides actionable feedback for improvement.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Resumes Processed</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">85%</span>
+                                <span class="stat-label">Accuracy</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">92%</span>
+                                <span class="stat-label">Positive Feedback</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities">
+        <h2 class="section-title" data-aos="fade-up"><span class="highlight">&lt;</span> Activities & Leadership <span class="highlight">/&gt;</span></h2>
+        <div class="activities-grid">
+            <div class="activity-card" data-aos="fade-up">
+                <div class="activity-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div class="activity-content">
+                    <h3>Teaching Assistant For Computer Programming</h3>
+                    <p class="activity-location">Salisbury High School, Allentown, Pennsylvania</p>
+                    <p class="activity-date">August 2019 - May 2020</p>
+                    <ul>
+                        <li>Assisted students in mastering computer programming concepts through guided lessons and personalized support.</li>
+                        <li>Provided feedback on coding assignments and facilitated classroom discussions on software development practices.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="activity-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="activity-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <div class="activity-content">
+                    <h3>HackPSU</h3>
+                    <p class="activity-location">State College, Pennsylvania</p>
+                    <p class="activity-date">August 2024 - Present</p>
+                    <ul>
+                        <li>Collaborated with fellow students in hackathons to design and develop innovative tech solutions.</li>
+                        <li>Engaged in workshops and networking events, continually enhancing programming skills and industry connections.</li>
+                        <li>Networked with industry professionals, building lasting connections and enhancing knowledge of tech trends.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="activity-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="activity-icon">
+                    <i class="fas fa-futbol"></i>
+                </div>
+                <div class="activity-content">
+                    <h3>Penn State Soccer Watch Club</h3>
+                    <p class="activity-location">State College, Pennsylvania</p>
+                    <p class="activity-date">August 2024 - Present</p>
+                    <p class="activity-role">President</p>
+                    <ul>
+                        <li>Organized and led club meetings and events, including game viewings and discussions, enhancing the club's community engagement.</li>
+                        <li>Coordinated with members to plan social activities and guest speaker sessions, expanding the club's reach and influence on campus.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title" data-aos="fade-up"><span class="highlight">&lt;</span> Technical Skills <span class="highlight">/&gt;</span></h2>
+        <div class="skills-content">
+            <div class="skills-category" data-aos="fade-up">
+                <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>C++</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>C</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Java</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>SQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+                <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML/CSS</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React.js</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Node.js</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Django</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+                <h3><i class="fas fa-tools"></i> Tools & Applications</h3>
+                <div class="skills-grid">
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <span>Git</span>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <span>VSCode</span>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <span>VMware</span>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <span>Xcode</span>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <span>MATLAB</span>
+                    </div>
+                    <div class="tool-item">
+                        <div class="tool-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <span>Matplotlib</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title" data-aos="fade-up"><span class="highlight">&lt;</span> Get In Touch <span class="highlight">/&gt;</span></h2>
+        <div class="contact-content-single" data-aos="fade-up">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>I'm currently open to internship opportunities and collaborations. Feel free to reach out if you'd like to work together or just want to connect!</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:majdhaddad0117@gmail.com">majdhaddad0117@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/Majd2217" target="_blank">github.com/Majd2217</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/majd-haddad" target="_blank">linkedin.com/in/majd-haddad</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">&lt;MajdHaddad /&gt;</div>
+            <p>Computer Science Student at Penn State University</p>
+            <div class="social-links">
+                <a href="https://github.com/Majd2217" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/majd-haddad" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:majdhaddad0117@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; <span id="currentYear"></span> Majd Haddad. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+</body>
+</html>
